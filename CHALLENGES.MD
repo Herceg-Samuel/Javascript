@@ -1,37 +1,5 @@
 # 30-Day JavaScript Challenge V1
 
-
-
-
-## Day 7: Functions Part 2
-
-**Concepts:** Arrow functions, function expressions, scope
-
-**Challenge:** Temperature converter revisited
-
-1. Rewrite your temperature converter from Day 2 using arrow functions
-2. Create one function for Celsius to Fahrenheit conversion
-3. Create another function for Fahrenheit to Celsius conversion
-4. Create a third function that takes a temperature and a unit ('C' or 'F') and converts it to the other unit
-5. Test with various temperatures
-
-**Hints:**
-
-```javascript
-const celsiusToFahrenheit = (celsius) => (celsius * 9) / 5 + 32;
-const fahrenheitToCelsius = (fahrenheit) => ((fahrenheit - 32) * 5) / 9;
-
-const convertTemperature = (temp, unit) => {
-  if (unit === "C") {
-    return `${temp}°C is ${celsiusToFahrenheit(temp)}°F`;
-  } else if (unit === "F") {
-    return `${temp}°F is ${fahrenheitToCelsius(temp)}°C`;
-  }
-};
-```
-
----
-
 ## Day 8: Objects Part 1
 
 **Concepts:** Object creation, properties, methods, dot notation
