@@ -12,6 +12,8 @@ while (numbers <= 20) {
   numbers += 2;
 }
 
-for (i = 0; (i = 10); i--) {
+let num =[0,1,2,3,4,5,6,7,8,9]
+for (i = 10; i < num.length; i--) {
   console.log(i);
+  i -=1;
 }

@@ -1,44 +1,7 @@
 # 30-Day JavaScript Challenge V1
 
-**Hints:**
 
-```javascript
-let shoppingList = ["milk", "eggs", "bread", "apples", "chocolate"];
-console.log(`First item: ${shoppingList[0]}`);
-shoppingList.push("cheese"); // Add to end
-shoppingList.shift(); // Remove from beginning
-```
 
----
-
-## Day 6: Loops Part 1
-
-**Concepts:** for loops, while loops, loop control
-
-**Challenge:** Number pattern generator
-
-1. Use a for loop to print numbers from 1 to 10
-2. Use a while loop to print even numbers from 2 to 20
-3. Create a loop that counts down from 10 to 1
-4. Bonus: Create a multiplication table for a number of your choice (1-10)
-
-**Hints:**
-
-```javascript
-// Counting up
-for (let i = 1; i <= 10; i++) {
-  console.log(i);
-}
-
-// Even numbers
-let num = 2;
-while (num <= 20) {
-  console.log(num);
-  num += 2;
-}
-```
-
----
 
 ## Day 7: Functions Part 2
 
