@@ -1,51 +1,5 @@
 # 30-Day JavaScript Challenge V1
 
-## Day 8: Objects Part 1
-
-**Concepts:** Object creation, properties, methods, dot notation
-
-**Challenge:** Pet profile creator
-
-1. Create an object to represent a pet with properties for name, type, age, and favorite toys (array)
-2. Add a method that returns a string describing the pet
-3. Access and output specific properties
-4. Modify some properties and observe the changes
-5. Add a new property to the object
-
-**Hints:**
-
-```javascript
-const pet = {
-  name: "Buddy",
-  type: "Dog",
-  age: 3,
-  favoriteToys: ["ball", "rope", "frisbee"],
-  describe: function () {
-    return `${this.name} is a ${this.age} year old ${
-      this.type
-    } who loves playing with ${this.favoriteToys.join(", ")}.`;
-  },
-};
-
-console.log(pet.describe());
-pet.age = 4; // Modify a property
-pet.breed = "Golden Retriever"; // Add a new property
-```
-
----
-
-## Day 9: Arrays Part 2
-
-**Concepts:** Array iteration, map, filter, forEach
-
-**Challenge:** Student grade analyzer
-
-1. Create an array of student objects, each with name and grade properties
-2. Use forEach to display all students and their grades
-3. Use filter to find all students with passing grades (above 60)
-4. Use map to create a new array with just the names of all students
-5. Bonus: Use map to add a "passing" property to each student object (true/false)
-
 **Hints:**
 
 ```javascript
@@ -62,17 +16,6 @@ const studentNames = students.map((student) => student.name);
 ```
 
 ---
-
-## Day 10: DOM Basics
-
-**Concepts:** Accessing DOM elements, modifying content, handling events
-
-**Challenge:** Interactive color changer
-
-1. Create an HTML page with a button and a div element
-2. Write JavaScript to change the div's background color when the button is clicked
-3. Start with a fixed color, then modify to cycle through at least 3 colors
-4. Add text inside the div that updates to show the current color name
 
 **Hints:**
 
@@ -105,17 +48,6 @@ const studentNames = students.map((student) => student.name);
 
 ---
 
-## Day 11: Loops Part 2
-
-**Concepts:** Nested loops, for...of, for...in
-
-**Challenge:** Multi-dimensional data processing
-
-1. Create a 2D array representing a week's worth of daily temperatures (e.g., 7 days with high/low temps)
-2. Use nested loops to calculate the average high and low temperatures for the week
-3. Find and output the warmest and coldest days
-4. Use for...of to iterate through the days and output each day's temperature range
-
 **Hints:**
 
 ```javascript
@@ -141,18 +73,6 @@ for (let i = 0; i < weekTemps.length; i++) {
 ```
 
 ---
-
-## Day 12: Objects Part 2
-
-**Concepts:** Object destructuring, Object.keys(), Object.values(), nested objects
-
-**Challenge:** Book catalog
-
-1. Create an array of book objects with properties for title, author, year, and ratings (object with average and count)
-2. Use destructuring to extract properties when processing books
-3. Use Object.keys() to list all available properties for a book
-4. Create a function that finds books by a specific author
-5. Add a method to each book that returns whether it's "recent" (published in the last 5 years)
 
 **Hints:**
 
@@ -182,20 +102,6 @@ function findBooksByAuthor(bookArray, authorName) {
 ```
 
 ---
-
-## Day 13: Error Handling
-
-**Concepts:** try...catch blocks, throwing errors, finally
-
-**Challenge:** Form validator
-
-1. Create a simple form with name, email, and age fields
-2. Write validation functions that throw errors for:
-   - Empty name
-   - Invalid email format (must include @ and .)
-   - Age not being a number or outside reasonable range (0-120)
-3. Use try...catch to handle these errors and display appropriate messages
-4. Include a finally block that logs completion of the validation process
 
 **Hints:**
 
@@ -276,7 +182,7 @@ const products = [
 
 const totalValue = products.reduce(
   (sum, product) => sum + product.price * product.quantity,
-  0
+  0,
 );
 const sortedByPrice = [...products].sort((a, b) => a.price - b.price);
 const anyOutOfStock = products.some((product) => product.quantity === 0);
@@ -392,18 +298,6 @@ const [firstHobby, ...otherHobbies] = user.hobbies;
 ```
 
 ---
-
-## Day 19: Classes and OOP
-
-**Concepts:** Classes, constructors, methods, inheritance
-
-**Challenge:** Library management system
-
-1. Create a Book class with properties for title, author, ISBN, and availability
-2. Add methods to check out and return books
-3. Create a Library class that contains an array of Book objects
-4. Add methods to add books, find books by title or author, and display all books
-5. Create a specialized class for EBook that extends Book with additional properties
 
 **Hints:**
 
@@ -765,7 +659,7 @@ function getCurrentLocation() {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           }),
-        (error) => reject(error)
+        (error) => reject(error),
       );
     }
   });
@@ -838,7 +732,7 @@ function completeQuiz() {
 // Listen for the custom event
 document.addEventListener("quizComplete", function (e) {
   console.log(
-    `Quiz completed! Score: ${e.detail.score}, Time remaining: ${e.detail.timeRemaining}`
+    `Quiz completed! Score: ${e.detail.score}, Time remaining: ${e.detail.timeRemaining}`,
   );
   // Show results, etc.
 });

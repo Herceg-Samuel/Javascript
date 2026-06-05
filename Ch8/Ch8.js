@@ -6,17 +6,14 @@ let pet = {
 };
 
 const info = (pet) => {
-  for (let i = 0; i < pet.length; i++) {
-    console.log(
-      `Pet name is ${pet.petName} of type ${pet.type}. It is ${pet.age} years old. Favorite toys include : ${pet.favToy}`
-    );
-  }
+  console.log(
+    `Pet name is ${pet.petName} of type ${pet.type}. It is ${pet.age} years old. Favorite toys include : ${pet.favToy}`,
+  );
 };
-console.log(pet);
 
-// let pet.color = "black";
+pet.color = "black";
 
-info();
+info(pet);
 
 //1. Create an object to represent a pet with properties for name, type, age, and favorite toys (array)
 //2. Add a method that returns a string describing the pet
